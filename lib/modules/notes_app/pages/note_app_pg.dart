@@ -1,5 +1,6 @@
 //--Ref: https://www.youtube.com/watch?v=4Na6MF_9tIE
 import 'package:flutter/material.dart';
+import 'package:flutter_app/configs/all_configs.dart';
 
 import 'all_pages.dart';
 
@@ -11,7 +12,7 @@ class NoteApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter App!!',
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: Themes.lightMode,
       home: const FrontPage(),
       debugShowCheckedModeBanner: false,
     );

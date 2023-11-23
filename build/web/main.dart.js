@@ -25,17 +25,18 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
   const box_fit = flutter_sdk.src__painting__box_fit;
   const image_resolution = flutter_sdk.src__painting__image_resolution;
   const basic = flutter_sdk.src__widgets__basic;
-  const alignment = flutter_sdk.src__painting__alignment;
   const flex = flutter_sdk.src__rendering__flex;
+  const circle_avatar = flutter_sdk.src__material__circle_avatar;
+  const icon = flutter_sdk.src__widgets__icon;
+  const icons = flutter_sdk.src__material__icons;
   const text = flutter_sdk.src__widgets__text;
+  const alignment = flutter_sdk.src__painting__alignment;
+  const text_style = flutter_sdk.src__painting__text_style;
   const elevated_button = flutter_sdk.src__material__elevated_button;
   const safe_area = flutter_sdk.src__widgets__safe_area;
   const edge_insets = flutter_sdk.src__painting__edge_insets;
   const icon_button = flutter_sdk.src__material__icon_button;
-  const icon = flutter_sdk.src__widgets__icon;
-  const icons = flutter_sdk.src__material__icons;
   const text_span = flutter_sdk.src__painting__text_span;
-  const text_style = flutter_sdk.src__painting__text_style;
   const inline_span = flutter_sdk.src__painting__inline_span;
   const colors$ = flutter_sdk.src__painting__colors;
   const floating_action_button_theme = flutter_sdk.src__material__floating_action_button_theme;
@@ -76,6 +77,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
   var colors$0 = Object.create(dart.library);
   var sizes = Object.create(dart.library);
   var styles = Object.create(dart.library);
+  var themes = Object.create(dart.library);
   var glassmorphism = Object.create(dart.library);
   var $toString = dartx.toString;
   dart._checkModuleNullSafetyMode(true);
@@ -257,71 +259,247 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     get C25() {
       return C[25] = dart.const({
         __proto__: ui.Color.prototype,
-        [Color_value]: 4287337660
+        [Color_value]: 4293471792
       });
     },
     get C26() {
       return C[26] = dart.const({
         __proto__: ui.Color.prototype,
-        [Color_value]: 4294962399
+        [Color_value]: 4285186649
       });
     },
     get C29() {
       return C[29] = dart.const({
         __proto__: ui.Color.prototype,
-        [Color_value]: 4282818734
+        [Color_value]: 4293128957
       });
     },
     get C30() {
       return C[30] = dart.const({
         __proto__: ui.Color.prototype,
-        [Color_value]: 4278255563
+        [Color_value]: 4290502395
       });
-    },
-    get C28() {
-      return C[28] = dart.constList([C[29] || CT.C29, C[30] || CT.C30], ui.Color);
     },
     get C31() {
       return C[31] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4287679225
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4284790262
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4282557941
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4280391411
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4280191205
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4279858898
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4279592384
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4279060385
+      });
+    },
+    get C28() {
+      return C[28] = dart.constMap(core.int, ui.Color, [50, C[29] || CT.C29, 100, C[30] || CT.C30, 200, C[31] || CT.C31, 300, C[32] || CT.C32, 400, C[33] || CT.C33, 500, C[34] || CT.C34, 600, C[35] || CT.C35, 700, C[36] || CT.C36, 800, C[37] || CT.C37, 900, C[38] || CT.C38]);
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: colors.MaterialColor.prototype,
+        [Color_value]: 4280391411,
+        [ColorSwatch__swatch]: C[28] || CT.C28
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294966759
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294965700
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294964637
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294963574
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294962776
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294961979
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294826037
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294688813
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294551589
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294278935
+      });
+    },
+    get C40() {
+      return C[40] = dart.constMap(core.int, ui.Color, [50, C[41] || CT.C41, 100, C[42] || CT.C42, 200, C[43] || CT.C43, 300, C[44] || CT.C44, 400, C[45] || CT.C45, 500, C[46] || CT.C46, 600, C[47] || CT.C47, 700, C[48] || CT.C48, 800, C[49] || CT.C49, 900, C[50] || CT.C50]);
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: colors.MaterialColor.prototype,
+        [Color_value]: 4294961979,
+        [ColorSwatch__swatch]: C[40] || CT.C40
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4290888129
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294967295
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4279242768
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 0
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4287337660
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294962399
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4282818734
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4278255563
+      });
+    },
+    get C58() {
+      return C[58] = dart.constList([C[59] || CT.C59, C[60] || CT.C60], ui.Color);
+    },
+    get C61() {
+      return C[61] = dart.const({
         __proto__: ui.TileMode.prototype,
         [_Enum__name]: "clamp",
         [_Enum_index]: 0
       });
     },
-    get C32() {
-      return C[32] = dart.const({
+    get C62() {
+      return C[62] = dart.const({
         __proto__: alignment.Alignment.prototype,
         [Alignment_y]: 0,
         [Alignment_x]: 1
       });
     },
-    get C33() {
-      return C[33] = dart.const({
+    get C63() {
+      return C[63] = dart.const({
         __proto__: alignment.Alignment.prototype,
         [Alignment_y]: 0,
         [Alignment_x]: -1
       });
     },
-    get C27() {
-      return C[27] = dart.const({
+    get C57() {
+      return C[57] = dart.const({
         __proto__: gradient.LinearGradient.prototype,
         [Gradient_transform]: null,
         [Gradient_stops]: null,
-        [Gradient_colors]: C[28] || CT.C28,
-        [LinearGradient_tileMode]: C[31] || CT.C31,
-        [LinearGradient_end]: C[32] || CT.C32,
-        [LinearGradient_begin]: C[33] || CT.C33
+        [Gradient_colors]: C[58] || CT.C58,
+        [LinearGradient_tileMode]: C[61] || CT.C61,
+        [LinearGradient_end]: C[62] || CT.C62,
+        [LinearGradient_begin]: C[63] || CT.C63
       });
     },
-    get C34() {
-      return C[34] = dart.const({
+    get C64() {
+      return C[64] = dart.const({
         __proto__: box_border.BoxShape.prototype,
         [_Enum__name]: "rectangle",
         [_Enum_index]: 0
       });
     }
   }, false);
-  var C = Array(35).fill(void 0);
+  var C = Array(65).fill(void 0);
   var I = [
     "file:///zapp/project/lib/main.dart",
     "file:///zapp/project/lib/modules/glassmorphic/views/glassmorphic_pg.dart",
@@ -329,6 +507,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     "package:flutter_app/components/mybuttons.dart",
     "package:flutter_app/components/menu_tab.dart",
     "package:flutter_app/components/custom_glassmorphism.dart",
+    "package:flutter_app/configs/themes.dart",
     "file:///zapp/pub/.pub_cache/hosted/pub.dev/glassmorphism-3.0.0/lib/glassmorphism.dart",
     "package:glassmorphism/glassmorphism.dart"
   ];
@@ -441,7 +620,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
   glassmorphic_pg._GlassmorphicPageState = class _GlassmorphicPageState extends framework.State$(glassmorphic_pg.GlassmorphicPage) {
     build(context) {
       let sz = media_query.MediaQuery.of(context).size;
-      return new scaffold.Scaffold.new({body: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({color: colors.Colors.blue, image: new decoration_image.DecorationImage.new({fit: box_fit.BoxFit.cover, image: new image_resolution.AssetImage.new("lib/assets/images/calm.jpg")})}), child: new custom_glassmorphism.CustomGlassmorphism.new({width: sz.width, height: sz.height, borderRadius: 0, child: new basic.Stack.new({children: T.JSArrayOfWidget().of([new container.Container.new({alignment: alignment.Alignment.center, child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidget().of([new text.Text.new("Glassmorphic Page"), new basic.SizedBox.new({height: 10}), new elevated_button.ElevatedButton.new({onPressed: dart.fn(() => {
+      return new scaffold.Scaffold.new({body: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({color: colors.Colors.blue, image: new decoration_image.DecorationImage.new({fit: box_fit.BoxFit.cover, image: new image_resolution.AssetImage.new("lib/assets/images/calm.jpg")})}), child: new custom_glassmorphism.CustomGlassmorphism.new({width: sz.width, height: sz.height, borderRadius: 0, child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceBetween, children: T.JSArrayOfWidget().of([new circle_avatar.CircleAvatar.new({backgroundColor: colors$0.kWhite, child: new icon.Icon.new(icons.Icons.people)}), new text.Text.new("O")])}), new container.Container.new({alignment: alignment.Alignment.center, child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidget().of([new text.Text.new("Glassmorphic Page", {style: new text_style.TextStyle.new({fontFamily: "Poppins", fontSize: 18})}), new basic.SizedBox.new({height: 10}), new elevated_button.ElevatedButton.new({onPressed: dart.fn(() => {
                         }, T.VoidTovoid()), child: new text.Text.new("Proceed")})])})})])})})})});
     }
     static ['_#new#tearOff']() {
@@ -669,17 +848,41 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
   var LinearGradient_end = dart.privateName(gradient, "LinearGradient.end");
   var LinearGradient_begin = dart.privateName(gradient, "LinearGradient.begin");
   dart.defineLazy(colors$0, {
+    /*colors$0.kRed*/get kRed() {
+      return C[25] || CT.C25;
+    },
+    /*colors$0.kGreen*/get kGreen() {
+      return C[26] || CT.C26;
+    },
+    /*colors$0.kBlue*/get kBlue() {
+      return C[27] || CT.C27;
+    },
+    /*colors$0.kYellow*/get kYellow() {
+      return C[39] || CT.C39;
+    },
+    /*colors$0.kGrey*/get kGrey() {
+      return C[51] || CT.C51;
+    },
+    /*colors$0.kWhite*/get kWhite() {
+      return C[52] || CT.C52;
+    },
+    /*colors$0.kBlack*/get kBlack() {
+      return C[53] || CT.C53;
+    },
+    /*colors$0.kTransparent*/get kTransparent() {
+      return C[54] || CT.C54;
+    },
     /*colors$0.kAppPrimary*/get kAppPrimary() {
       return colors.Colors.deepOrange._get(400);
     },
     /*colors$0.kAppSecondary*/get kAppSecondary() {
-      return C[25] || CT.C25;
+      return C[55] || CT.C55;
     },
     /*colors$0.kAppPrimaryLight*/get kAppPrimaryLight() {
-      return C[26] || CT.C26;
+      return C[56] || CT.C56;
     },
     /*colors$0.kPrimaryGradient*/get kPrimaryGradient() {
-      return C[27] || CT.C27;
+      return C[57] || CT.C57;
     }
   }, false);
   dart.defineLazy(sizes, {
@@ -703,6 +906,26 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     },
     /*sizes.kNavigationRailWidth*/get kNavigationRailWidth() {
       return 72;
+    }
+  }, false);
+  themes.Themes = class Themes extends core.Object {
+    static ['_#new#tearOff']() {
+      return new themes.Themes.new();
+    }
+  };
+  (themes.Themes.new = function() {
+    ;
+  }).prototype = themes.Themes.prototype;
+  dart.addTypeTests(themes.Themes);
+  dart.addTypeCaches(themes.Themes);
+  dart.setLibraryUri(themes.Themes, I[6]);
+  dart.setStaticFieldSignature(themes.Themes, () => ['lightMode', 'darkMode']);
+  dart.defineLazy(themes.Themes, {
+    /*themes.Themes.lightMode*/get lightMode() {
+      return theme_data.ThemeData.new({primaryColor: colors$0.kAppPrimary, brightness: ui.Brightness.light, fontFamily: "Poppins", inputDecorationTheme: new input_decorator.InputDecorationTheme.new({border: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.circular(20), borderSide: borders.BorderSide.none}), filled: true, fillColor: colors.Colors.grey.withOpacity(0.1)})});
+    },
+    /*themes.Themes.darkMode*/get darkMode() {
+      return theme_data.ThemeData.new({primaryColor: colors.Colors.blue, brightness: ui.Brightness.dark, fontFamily: "Poppins", inputDecorationTheme: new input_decorator.InputDecorationTheme.new({border: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.circular(20), borderSide: borders.BorderSide.none}), filled: true, fillColor: colors.Colors.grey.withOpacity(0.1)})});
     }
   }, false);
   var key$ = dart.privateName(glassmorphism, "GlassmorphicFlexContainer.key");
@@ -809,7 +1032,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
       let child = opts && 'child' in opts ? opts.child : null;
       let alignment = opts && 'alignment' in opts ? opts.alignment : null;
       let padding = opts && 'padding' in opts ? opts.padding : null;
-      let shape = opts && 'shape' in opts ? opts.shape : C[34] || CT.C34;
+      let shape = opts && 'shape' in opts ? opts.shape : C[64] || CT.C64;
       let margin = opts && 'margin' in opts ? opts.margin : null;
       let transform = opts && 'transform' in opts ? opts.transform : null;
       let borderRadius = opts && 'borderRadius' in opts ? opts.borderRadius : null;
@@ -839,7 +1062,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     let child = opts && 'child' in opts ? opts.child : null;
     let alignment = opts && 'alignment' in opts ? opts.alignment : null;
     let padding = opts && 'padding' in opts ? opts.padding : null;
-    let shape = opts && 'shape' in opts ? opts.shape : C[34] || CT.C34;
+    let shape = opts && 'shape' in opts ? opts.shape : C[64] || CT.C64;
     let margin = opts && 'margin' in opts ? opts.margin : null;
     let transform = opts && 'transform' in opts ? opts.transform : null;
     let borderRadius = opts && 'borderRadius' in opts ? opts.borderRadius : null;
@@ -863,10 +1086,10 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     this[borderGradient$] = borderGradient;
     this[constraints$] = constraints;
     this[flex$] = flex;
-    if (!(margin == null || margin.isNonNegative)) dart.assertFailed(null, I[6], 127, 16, "margin == null || margin.isNonNegative");
-    if (!(padding == null || padding.isNonNegative)) dart.assertFailed(null, I[6], 128, 16, "padding == null || padding.isNonNegative");
-    if (!(dart.nullCheck(flex) >= 1)) dart.assertFailed("Flex value can be less than 1 : " + dart.str(flex) + ". Please Provide a flex value > 1", I[6], 130, 11, "flex! >= 1");
-    if (!(constraints == null || constraints.debugAssertIsValid())) dart.assertFailed(null, I[6], 133, 16, "constraints == null || constraints.debugAssertIsValid()");
+    if (!(margin == null || margin.isNonNegative)) dart.assertFailed(null, I[7], 127, 16, "margin == null || margin.isNonNegative");
+    if (!(padding == null || padding.isNonNegative)) dart.assertFailed(null, I[7], 128, 16, "padding == null || padding.isNonNegative");
+    if (!(dart.nullCheck(flex) >= 1)) dart.assertFailed("Flex value can be less than 1 : " + dart.str(flex) + ". Please Provide a flex value > 1", I[7], 130, 11, "flex! >= 1");
+    if (!(constraints == null || constraints.debugAssertIsValid())) dart.assertFailed(null, I[7], 133, 16, "constraints == null || constraints.debugAssertIsValid()");
     glassmorphism.GlassmorphicFlexContainer.__proto__.new.call(this, {key: key});
     ;
   }).prototype = glassmorphism.GlassmorphicFlexContainer.prototype;
@@ -876,7 +1099,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     __proto__: dart.getMethods(glassmorphism.GlassmorphicFlexContainer.__proto__),
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
-  dart.setLibraryUri(glassmorphism.GlassmorphicFlexContainer, I[7]);
+  dart.setLibraryUri(glassmorphism.GlassmorphicFlexContainer, I[8]);
   dart.setFieldSignature(glassmorphism.GlassmorphicFlexContainer, () => ({
     __proto__: dart.getFields(glassmorphism.GlassmorphicFlexContainer.__proto__),
     key: dart.finalFieldType(dart.nullable(key.Key)),
@@ -1005,7 +1228,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
       let child = opts && 'child' in opts ? opts.child : null;
       let alignment = opts && 'alignment' in opts ? opts.alignment : null;
       let padding = opts && 'padding' in opts ? opts.padding : null;
-      let shape = opts && 'shape' in opts ? opts.shape : C[34] || CT.C34;
+      let shape = opts && 'shape' in opts ? opts.shape : C[64] || CT.C64;
       let constraints = opts && 'constraints' in opts ? opts.constraints : null;
       let margin = opts && 'margin' in opts ? opts.margin : null;
       let transform = opts && 'transform' in opts ? opts.transform : null;
@@ -1037,7 +1260,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     let child = opts && 'child' in opts ? opts.child : null;
     let alignment = opts && 'alignment' in opts ? opts.alignment : null;
     let padding = opts && 'padding' in opts ? opts.padding : null;
-    let shape = opts && 'shape' in opts ? opts.shape : C[34] || CT.C34;
+    let shape = opts && 'shape' in opts ? opts.shape : C[64] || CT.C64;
     let constraints = opts && 'constraints' in opts ? opts.constraints : null;
     let margin = opts && 'margin' in opts ? opts.margin : null;
     let transform = opts && 'transform' in opts ? opts.transform : null;
@@ -1062,9 +1285,9 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     this[border$0] = border;
     this[blur$0] = blur;
     this[borderGradient$0] = borderGradient;
-    if (!(margin == null || margin.isNonNegative)) dart.assertFailed(null, I[6], 312, 16, "margin == null || margin.isNonNegative");
-    if (!(padding == null || padding.isNonNegative)) dart.assertFailed(null, I[6], 313, 16, "padding == null || padding.isNonNegative");
-    if (!(constraints == null || constraints.debugAssertIsValid())) dart.assertFailed(null, I[6], 314, 16, "constraints == null || constraints.debugAssertIsValid()");
+    if (!(margin == null || margin.isNonNegative)) dart.assertFailed(null, I[7], 312, 16, "margin == null || margin.isNonNegative");
+    if (!(padding == null || padding.isNonNegative)) dart.assertFailed(null, I[7], 313, 16, "padding == null || padding.isNonNegative");
+    if (!(constraints == null || constraints.debugAssertIsValid())) dart.assertFailed(null, I[7], 314, 16, "constraints == null || constraints.debugAssertIsValid()");
     this[constraints$0] = (t0$ = (t0 = constraints, t0 == null ? null : t0.tighten({width: width, height: height})), t0$ == null ? new box.BoxConstraints.tightFor({width: width, height: height}) : t0$);
     glassmorphism.GlassmorphicContainer.__proto__.new.call(this, {key: key});
     ;
@@ -1075,7 +1298,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     __proto__: dart.getMethods(glassmorphism.GlassmorphicContainer.__proto__),
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
-  dart.setLibraryUri(glassmorphism.GlassmorphicContainer, I[7]);
+  dart.setLibraryUri(glassmorphism.GlassmorphicContainer, I[8]);
   dart.setFieldSignature(glassmorphism.GlassmorphicContainer, () => ({
     __proto__: dart.getFields(glassmorphism.GlassmorphicContainer.__proto__),
     key: dart.finalFieldType(dart.nullable(key.Key)),
@@ -1142,7 +1365,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     __proto__: dart.getMethods(glassmorphism.GlassmorphicBorder.__proto__),
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
-  dart.setLibraryUri(glassmorphism.GlassmorphicBorder, I[7]);
+  dart.setLibraryUri(glassmorphism.GlassmorphicBorder, I[8]);
   dart.setFieldSignature(glassmorphism.GlassmorphicBorder, () => ({
     __proto__: dart.getFields(glassmorphism.GlassmorphicBorder.__proto__),
     [_painter]: dart.finalFieldType(glassmorphism._GradientPainter),
@@ -1196,7 +1419,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     paint: dart.fnType(dart.void, [ui.Canvas, ui.Size]),
     shouldRepaint: dart.fnType(core.bool, [dart.nullable(core.Object)])
   }));
-  dart.setLibraryUri(glassmorphism._GradientPainter, I[7]);
+  dart.setLibraryUri(glassmorphism._GradientPainter, I[8]);
   dart.setFieldSignature(glassmorphism._GradientPainter, () => ({
     __proto__: dart.getFields(glassmorphism._GradientPainter.__proto__),
     radius: dart.finalFieldType(core.double),
@@ -1222,9 +1445,10 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     "package:flutter_app/configs/colors.dart": colors$0,
     "package:flutter_app/configs/sizes.dart": sizes,
     "package:flutter_app/configs/styles.dart": styles,
+    "package:flutter_app/configs/themes.dart": themes,
     "package:glassmorphism/glassmorphism.dart": glassmorphism
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["/zapp/project/.zapp_entry.dart","/zapp/project/lib/main.dart","/zapp/project/.dart_tool/dartpad/web_plugin_registrant.dart","/zapp/project/lib/themes/light_mode.dart","/zapp/project/lib/modules/glassmorphic/views/glassmorphic_pg.dart","/zapp/project/lib/modules/quiz/pages/quiz_pg.dart","/zapp/project/lib/themes/theme_options.dart","/zapp/project/lib/components/myappbar.dart","/zapp/project/lib/components/mybuttons.dart","/zapp/project/lib/components/menu_tab.dart","/zapp/project/lib/components/custom_glassmorphism.dart","/zapp/project/lib/configs/colors.dart","/zapp/project/lib/configs/sizes.dart","/zapp/pub/.pub_cache/hosted/pub.dev/glassmorphism-3.0.0/lib/glassmorphism.dart"],"names":[],"mappings":"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","file":"main.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["/zapp/project/.zapp_entry.dart","/zapp/project/lib/main.dart","/zapp/project/.dart_tool/dartpad/web_plugin_registrant.dart","/zapp/project/lib/themes/light_mode.dart","/zapp/project/lib/modules/glassmorphic/views/glassmorphic_pg.dart","/zapp/project/lib/modules/quiz/pages/quiz_pg.dart","/zapp/project/lib/themes/theme_options.dart","/zapp/project/lib/components/myappbar.dart","/zapp/project/lib/components/mybuttons.dart","/zapp/project/lib/components/menu_tab.dart","/zapp/project/lib/components/custom_glassmorphism.dart","/zapp/project/lib/configs/colors.dart","/zapp/project/lib/configs/sizes.dart","/zapp/project/lib/configs/themes.dart","/zapp/pub/.pub_cache/hosted/pub.dev/glassmorphism-3.0.0/lib/glassmorphism.dart"],"names":[],"mappings":"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","file":"main.js"}');
   // Exports:
   return {
     zapp__project__$46zapp_entry: $46zapp_entry,
@@ -1243,6 +1467,7 @@ define('zapp_user_main', ['dart_sdk', 'flutter_sdk'], (function load__zapp_user_
     configs__colors: colors$0,
     configs__sizes: sizes,
     configs__styles: styles,
+    configs__themes: themes,
     glassmorphism: glassmorphism
   };
 }));

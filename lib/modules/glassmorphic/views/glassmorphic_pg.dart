@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/components/all_components.dart';
+import 'package:flutter_app/configs/all_configs.dart';
 
 class GlassmorphicPage extends StatefulWidget {
   const GlassmorphicPage({super.key});
@@ -24,16 +25,31 @@ class _GlassmorphicPageState extends State<GlassmorphicPage> {
             width: sz.width,
             height: sz.height,
             borderRadius: 0,
-            child: Stack(
+            child: Column(
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(kDefaultPadding),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                    CircleAvatar(
+                      backgroundColor: kWhite,
+                      child: Icon(Icons.people)
+                    ),
+                    Text('O')
+                  ],),
+                ),
                 Container(
                   alignment: Alignment.center,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  Text('Glassmorphic Page'),
-                  SizedBox(height: 10),
-                  ElevatedButton(onPressed: () {}, child: Text('Proceed'))
+                      Text(
+                        'Glassmorphic Page',
+                        style: TextStyle(fontFamily: 'Poppins', fontSize: 18),
+                      ),
+                      SizedBox(height: 10),
+                      ElevatedButton(onPressed: () {}, child: Text('Proceed'))
                     ],
                   ),
                 ),
