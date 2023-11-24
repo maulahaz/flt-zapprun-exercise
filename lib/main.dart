@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/themes/light_mode.dart';
+import 'package:provider/provider.dart';
 
 // import 'package:flutter_app/pages/intro_pg.dart';
-import 'modules/glassmorphic/views/glassmorphic_pg.dart';
+import 'modules/glassmorphic/all_glassmorphics.dart';
+// import 'modules/glassmorphic/views/glassmorphic_pg.dart';
 import 'modules/quiz/pages/quiz_pg.dart';
 import 'themes/theme_options.dart';
 
@@ -18,13 +20,16 @@ class GlassmorphicApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ChangeNotifierProvider(
+      create: (contex)=>AreaModel(),
+      child: MaterialApp(
       title: 'Glassmorphic App',
       // theme: ThemeData(primarySwatch: Colors.blue),
       theme: lightTheme,
       // darkTheme: darkTheme,
       debugShowCheckedModeBanner: false,
       home: const GlassmorphicPage(),
+    ),
     );
   }
 }

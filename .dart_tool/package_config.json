@@ -98,8 +98,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///zapp/pub/.pub_cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///zapp/pub/.pub_cache/hosted/pub.dev/path-1.8.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///zapp/pub/.pub_cache/hosted/pub.dev/provider-6.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -158,7 +170,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-11-23T07:20:41.088368Z",
+  "generated": "2023-11-24T06:58:58.671517Z",
   "generator": "pub",
   "generatorVersion": "2.19.2"
 }
